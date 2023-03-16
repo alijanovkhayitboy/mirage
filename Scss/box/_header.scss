@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+body{
+    background-color:  #fff;
+    background-image: url(../img/bacimg.png) , url(../img/Bloobs.png) , url(../img/loobs.png) , url(../img/Bloobs.png) ,  url(../img/loobs.png);
+    background-repeat: no-repeat;
+    background-position: top right , left top 700px , right top 1655px , left top 2250px , right top 3200px; ;
+    ;
+}
+
+.head {
+    padding: 30px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 0px 10px 2px rgb(107, 106, 106);
+}
+
+.navlinks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin: 0px 25px;
+
+    a {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        /* identical to box height, or 150% */
+        font-family: 'Montserrat' , sans-serif;
+
+        color: #AAAAAB;
+
+    }
+    .home{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        /* identical to box height, or 150% */
+        font-family: 'Montserrat' , sans-serif;
+
+        color: #56597A;
+    }
+}
+
+.navlinks .nav-item .nav-toggler {
+    width: 45px;
+    height: 40px;
+    border: 1px solid rgb(51, 17, 244);
+    cursor: pointer;
+    // position: fixed;
+    // left: 300px;
+    // top: 20px;
+    border-radius: 5px;
+    background: rgb(49, 46, 46);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navlinks .nav-item .nav-toggler span {
+    height: 2px;
+    width: 18px;
+    background-color: rgb(183, 162, 162);
+    display: inline-block;
+    position: relative;
+
+}
+
+.navlinks .nav-item .nav-toggler span::before {
+    content: '';
+    width: 18px;
+    height: 2px;
+    background: rgb(207, 189, 189);
+    position: absolute;
+    top: -6px;
+    left: 0;
+}
+
+.navlinks .nav-item .nav-toggler span::after {
+    content: '';
+    width: 18px;
+    height: 2px;
+    background: rgb(190, 172, 172);
+    position: absolute;
+    top: 6px;
+    left: 0;
+}
